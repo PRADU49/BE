@@ -1,0 +1,151 @@
+.hero-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.inline-link {
+  color: var(--gold);
+  text-decoration-color: rgba(216, 185, 141, 0.7);
+  text-underline-offset: 3px;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.45rem;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+.detail-list.ordered {
+  padding-left: 1.25rem;
+}
+
+.chip-row {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip-row span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.76rem;
+  color: var(--text-soft);
+  background: rgba(176, 206, 244, 0.08);
+}
+
+.clock-badge {
+  width: 96px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(214, 233, 255, 0.08), rgba(7, 19, 39, 0.7));
+  box-shadow:
+    inset 0 0 0 1px rgba(182, 203, 237, 0.16),
+    0 8px 18px rgba(2, 8, 22, 0.35);
+}
+
+.clock-badge::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, transparent 0 58%, rgba(216, 185, 141, 0.4) 58% 60%, transparent 60%),
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(213, 185, 144, 0.7) 0deg 1deg,
+      transparent 1deg 30deg
+    );
+  opacity: 0.9;
+  animation: spin-ring 18s linear infinite;
+}
+
+.clock-ring {
+  position: absolute;
+  inset: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(182, 203, 237, 0.34);
+  box-shadow: inset 0 0 18px rgba(195, 219, 255, 0.08);
+}
+
+.clock-hand {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: 50% 100%;
+  border-radius: 999px;
+}
+
+.clock-hand.hour {
+  width: 3px;
+  height: 21px;
+  background: linear-gradient(to top, rgba(216, 185, 141, 0.62), #e3c79f 75%);
+  animation: spin-hour 36s linear infinite;
+}
+
+.clock-hand.minute {
+  width: 2px;
+  height: 31px;
+  background: linear-gradient(to top, rgba(173, 204, 242, 0.5), #d9e9ff);
+  animation: spin-minute 7s linear infinite;
+}
+
+.clock-hand.second {
+  width: 1.5px;
+  height: 35px;
+  background: linear-gradient(to top, rgba(216, 185, 141, 0.2), rgba(216, 185, 141, 1));
+  animation: spin-second 2.2s linear infinite;
+}
+
+.clock-center {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(216, 185, 141, 0.62);
+}
+
+.clock-glow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(216, 185, 141, 0.5);
+  animation: pulse-clock 1.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.faq-item {
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.97rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin-top: 0.75rem;
+  color: var(--text-soft);
+  line-height: 1.66;
+}

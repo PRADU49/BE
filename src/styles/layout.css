@@ -1,0 +1,224 @@
+.app-shell {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page-wrap {
+  width: min(1140px, 92vw);
+  margin: 0 auto;
+  padding: 1.35rem 0 2.3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.route-body {
+  animation: page-fade 0.35s ease;
+}
+
+.background-noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.2;
+  background-image: url("/film-noise.svg");
+  mix-blend-mode: soft-light;
+  z-index: -4;
+}
+
+.aurora {
+  position: fixed;
+  width: 42vmax;
+  height: 42vmax;
+  border-radius: 50%;
+  filter: blur(48px);
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: -3;
+}
+
+.aurora-left {
+  top: -12vmax;
+  left: -12vmax;
+  background: linear-gradient(45deg, #3e6ca5, #17386c);
+  animation: float-orb 14s ease-in-out infinite alternate;
+}
+
+.aurora-right {
+  right: -8vmax;
+  bottom: -18vmax;
+  background: linear-gradient(25deg, #385a8a, #0f2243);
+  animation: float-orb 11s ease-in-out infinite alternate-reverse;
+}
+
+.pointer-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  background: radial-gradient(
+    520px circle at var(--pointer-x) var(--pointer-y),
+    rgba(196, 220, 255, 0.14),
+    transparent 42%
+  );
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.scroll-progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #d8b98d, #9dc2f5);
+  box-shadow: 0 0 14px rgba(216, 185, 141, 0.5);
+  transition: width 0.12s linear;
+}
+
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.brand-block h1 {
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+}
+
+.crest-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-soft);
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.83rem;
+  color: var(--text-soft);
+  background: rgba(175, 202, 239, 0.06);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  border-color: var(--gold-soft);
+  color: var(--text);
+  background: rgba(216, 185, 141, 0.14);
+}
+
+.phone-chip {
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.58rem 1rem;
+  background: rgba(176, 205, 244, 0.08);
+}
+
+.site-footer {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.footer-main {
+  padding: 1rem 1.1rem;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 0.9rem;
+}
+
+.footer-brand {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.footer-action-col {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.footer-text,
+.footer-note {
+  color: var(--text-soft);
+  line-height: 1.62;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--gold);
+  text-underline-offset: 3px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.footer-nav-item {
+  text-decoration: none;
+  border: 1px solid var(--line);
+  color: var(--text-soft);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.74rem;
+  background: rgba(177, 205, 244, 0.07);
+}
+
+.footer-nav-item.active {
+  border-color: var(--gold-soft);
+  color: var(--text);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.85rem;
+}
+
+.footer-copyright,
+.footer-credit {
+  color: var(--text-soft);
+  font-size: 0.84rem;
+}
+
+.footer-credit a {
+  color: var(--gold);
+  text-underline-offset: 3px;
+}

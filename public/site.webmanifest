@@ -1,0 +1,16 @@
+{
+  "name": "Bhakti Enterprises",
+  "short_name": "Bhakti",
+  "description": "Retail store in Solapur for multi-brand mobiles and home electronics.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08142b",
+  "theme_color": "#102a54",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

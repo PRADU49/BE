@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <rect width="220" height="220" fill="none" />
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 22H220M0 44H220M0 66H220M0 88H220M0 110H220M0 132H220M0 154H220M0 176H220M0 198H220" />
+    <path d="M22 0V220M44 0V220M66 0V220M88 0V220M110 0V220M132 0V220M154 0V220M176 0V220M198 0V220" />
+  </g>
+</svg>

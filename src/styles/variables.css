@@ -1,0 +1,18 @@
+:root {
+  --bg-start: #061024;
+  --bg-mid: #0a1e3d;
+  --bg-end: #173966;
+  --panel: rgba(9, 24, 48, 0.7);
+  --panel-hover: rgba(14, 34, 66, 0.9);
+  --line: rgba(173, 197, 235, 0.26);
+  --line-strong: rgba(192, 212, 242, 0.45);
+  --text: #f3f8ff;
+  --text-soft: #bfd4f5;
+  --gold: #d8b98d;
+  --gold-soft: rgba(216, 185, 141, 0.36);
+  --shadow: 0 16px 42px rgba(3, 9, 22, 0.52);
+  --radius-lg: 26px;
+  --radius-md: 18px;
+  --pointer-x: 50%;
+  --pointer-y: 50%;
+}

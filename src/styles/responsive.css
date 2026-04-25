@@ -1,0 +1,92 @@
+@media (max-width: 1040px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid,
+  .highlight-grid,
+  .quick-nav-grid,
+  .source-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-wrap {
+    width: min(1140px, 94vw);
+    padding-top: 1rem;
+  }
+
+  .top-nav {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+  }
+
+  .products-grid,
+  .highlight-grid,
+  .details-grid,
+  .quick-nav-grid,
+  .source-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .details-grid .wide {
+    grid-column: span 1;
+  }
+
+  .hero-main,
+  .hero-aside,
+  .cta-section {
+    padding: 1.05rem;
+  }
+
+  .hero-main h2 {
+    font-size: clamp(1.7rem, 8.5vw, 2.6rem);
+  }
+
+  .sentiment-card h3 {
+    font-size: clamp(1.32rem, 7.1vw, 1.75rem);
+  }
+
+  .sentiment-card h3 span {
+    font-size: 0.74rem;
+    letter-spacing: 0.07em;
+  }
+
+  .sentiment-stars {
+    font-size: 0.9rem;
+    letter-spacing: 0.17em;
+  }
+
+  .sentiment-quote {
+    font-size: 0.94rem;
+    line-height: 1.56;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .btn {
+    flex: 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

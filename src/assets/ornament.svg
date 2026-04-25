@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100">
+  <defs>
+    <linearGradient id="ornate" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#be935f" stop-opacity="0" />
+      <stop offset="50%" stop-color="#e6cda7" stop-opacity="1" />
+      <stop offset="100%" stop-color="#be935f" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <path
+    d="M8 50h84c16 0 24-14 32-14s16 14 32 14h108c16 0 24-14 32-14s16 14 32 14h84"
+    fill="none"
+    stroke="url(#ornate)"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <circle cx="210" cy="50" r="8" fill="#d8b98d" />
+</svg>
