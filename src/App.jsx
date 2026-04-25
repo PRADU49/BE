@@ -3,13 +3,13 @@ import AppRoutes from "./components/layout/AppRoutes";
 import SiteFooter from "./components/layout/SiteFooter";
 import SiteHeader from "./components/layout/SiteHeader";
 import { usePointerGlow } from "./hooks/usePointerGlow";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   usePointerGlow();
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="app-shell">
         <ScrollProgressBar />
         <div className="background-noise" />
@@ -23,7 +23,7 @@ function App() {
           <SiteFooter />
         </div>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
