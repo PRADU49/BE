@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#08142B"/>
+  <circle cx="145" cy="92" r="210" fill="url(#paint0_radial)" fill-opacity="0.7"/>
+  <circle cx="1064" cy="560" r="240" fill="url(#paint1_radial)" fill-opacity="0.75"/>
+  <rect x="44" y="44" width="1112" height="542" rx="32" fill="url(#paint2_linear)" stroke="rgba(216,185,141,0.28)"/>
+  <rect x="78" y="78" width="1044" height="474" rx="24" fill="rgba(8,20,43,0.18)" stroke="rgba(176,206,244,0.18)"/>
+  <circle cx="184" cy="170" r="44" fill="#102A54" stroke="#D8B98D" stroke-width="2"/>
+  <path d="M168 170H200" stroke="#F1D9B7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M184 154V186" stroke="#F1D9B7" stroke-width="3" stroke-linecap="round"/>
+  <text x="248" y="182" fill="#EAF3FF" font-size="56" font-family="Georgia, serif">Bhakti Enterprises</text>
+  <text x="84" y="276" fill="#D8B98D" font-size="22" font-family="Verdana, sans-serif" letter-spacing="5">MOBILES  ACCESSORIES  APPLIANCES</text>
+  <text x="84" y="356" fill="#FFFFFF" font-size="78" font-family="Georgia, serif">Trusted Mobile &amp;</text>
+  <text x="84" y="438" fill="#FFFFFF" font-size="78" font-family="Georgia, serif">Electronics Shop</text>
+  <text x="84" y="500" fill="#C8DDF8" font-size="30" font-family="Verdana, sans-serif">Solapur, Maharashtra | Call +91 90219 29391</text>
+  <rect x="836" y="430" width="226" height="62" rx="31" fill="#D8B98D"/>
+  <text x="889" y="470" fill="#08142B" font-size="26" font-family="Verdana, sans-serif">Open Daily</text>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(145 92) rotate(90) scale(210)">
+      <stop stop-color="#3E6CA5"/>
+      <stop offset="1" stop-color="#3E6CA5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1064 560) rotate(90) scale(240)">
+      <stop stop-color="#5074A4"/>
+      <stop offset="1" stop-color="#5074A4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paint2_linear" x1="44" y1="44" x2="1156" y2="586" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102A54"/>
+      <stop offset="1" stop-color="#0B1D3A"/>
+    </linearGradient>
+  </defs>
+</svg>

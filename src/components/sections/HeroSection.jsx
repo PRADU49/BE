@@ -7,10 +7,10 @@ function HeroSection() {
     <section className="hero-section reveal" id="home">
       <article className="hero-main panel">
         <p className="eyebrow">Storefront</p>
-        <h2>
+        <h1>
           Timeless Retail,
           <span> Modern Electronics.</span>
-        </h2>
+        </h1>
         <img src={ornament} alt="" className="hero-ornament" aria-hidden="true" />
         <p>
           {storeInfo.name} in Solapur offers multi-brand mobiles and home appliances with

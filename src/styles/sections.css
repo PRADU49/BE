@@ -7,7 +7,7 @@ main {
   padding: 1.35rem;
 }
 
-.page-intro h2 {
+.page-intro h1 {
   font-size: clamp(1.9rem, 4vw, 3rem);
   margin-bottom: 0.48rem;
 }
@@ -50,12 +50,12 @@ main {
   padding: 1.5rem;
 }
 
-.hero-main h2 {
+.hero-main h1 {
   font-size: clamp(2rem, 5vw, 3.6rem);
   margin-bottom: 0.62rem;
 }
 
-.hero-main h2 span {
+.hero-main h1 span {
   color: var(--gold);
   text-shadow: 0 0 18px rgba(216, 185, 141, 0.24);
 }

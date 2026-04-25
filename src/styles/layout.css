@@ -95,10 +95,13 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  text-decoration: none;
 }
 
-.brand-block h1 {
+.brand-name {
   font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  line-height: 1.1;
 }
 
 .crest-logo {

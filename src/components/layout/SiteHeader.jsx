@@ -1,20 +1,19 @@
 import { storeInfo } from "../../data/storeData";
-import { formatPhoneForHref } from "../../utils/formatters";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../../data/navigation";
 
 function SiteHeader() {
   return (
     <header className="site-header reveal">
-      <div className="brand-block">
+      <Link to="/" className="brand-block" aria-label={`${storeInfo.name} home`}>
         <img src="/brand-crest.svg" alt="Bhakti Enterprises crest" className="crest-logo" />
         <div>
           <p className="eyebrow">{storeInfo.city}</p>
-          <h1>{storeInfo.name}</h1>
+          <p className="brand-name">{storeInfo.name}</p>
         </div>
-      </div>
+      </Link>
 
-      <nav className="top-nav">
+      <nav className="top-nav" aria-label="Primary">
         {navLinks.map((item) => (
           <NavLink
             key={item.to}

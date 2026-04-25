@@ -2,15 +2,44 @@
   "name": "Bhakti Enterprises",
   "short_name": "Bhakti",
   "description": "Retail store in Solapur for multi-brand mobiles and home electronics.",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
   "background_color": "#08142b",
   "theme_color": "#102a54",
+  "categories": ["shopping", "business", "electronics"],
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/favicon.svg",
-      "sizes": "64x64",
-      "type": "image/svg+xml"
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "View mobile, accessories, and appliance services.",
+      "url": "/services"
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Open store contact details and directions.",
+      "url": "/contact"
+    },
+    {
+      "name": "FAQ",
+      "short_name": "FAQ",
+      "description": "Read common customer questions and answers.",
+      "url": "/faq"
     }
   ]
 }

@@ -6,6 +6,7 @@ import ServicesPage from "../../pages/ServicesPage";
 import ContactPage from "../../pages/ContactPage";
 import FaqPage from "../../pages/FaqPage";
 import NotFoundPage from "../../pages/NotFoundPage";
+import SeoManager from "../seo/SeoManager";
 
 function AppRoutes() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function AppRoutes() {
 
   return (
     <div className="route-body" key={location.pathname}>
+      <SeoManager />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

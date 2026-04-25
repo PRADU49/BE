@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://bhakti-enterprises-gilt.vercel.app/sitemap.xml
