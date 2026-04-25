@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bhakti-enterprises-gilt.vercel.app/sitemap.xml
+Sitemap: https://bhaktienterprises.vercel.app/sitemap.xml
