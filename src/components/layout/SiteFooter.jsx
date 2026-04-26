@@ -15,7 +15,7 @@ function SiteFooter() {
         </p>
         <p className="footer-credit">
           Developed by{" "}
-          <a href="https://dev-p-portfolio-v1.vercel.app" target="_blank" rel="noreferrer">
+          <a href="https://dev-p-portfolio-v2.vercel.app" target="_blank" rel="noreferrer">
             Pradyumna Pawar
           </a>
           .
