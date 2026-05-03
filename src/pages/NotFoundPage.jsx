@@ -6,14 +6,14 @@ function NotFoundPage() {
     <main>
       <PageIntro
         eyebrow="404"
-        title="Page Not Found"
-        description="The page you requested is unavailable. Use the home link to continue browsing."
+        title="पेज सापडले नाही"
+        description="तुम्ही मागितलेलं पेज उपलब्ध नाही. पुढे जाण्यासाठी home link वापरा."
       />
 
       <section className="panel content-card reveal">
-        <p>Use the navigation menu or return to the homepage.</p>
+        <p>Navigation menu वापरा किंवा homepage ला परत जा.</p>
         <Link to="/" className="btn btn-ghost">
-          Back To Home
+          Home
         </Link>
       </section>
     </main>

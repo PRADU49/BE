@@ -6,33 +6,33 @@ function ContactPage() {
   return (
     <main>
       <PageIntro
-        eyebrow="Contact"
-        title="Reach Bhakti Enterprises"
-        description="This is a website. For direct communication, use the call link and map directions below."
+        eyebrow="संपर्क"
+        title="Bhakti Enterprises शी संपर्क करा"
+        description="थेट बोलण्यासाठी खालील call link आणि Google Maps वापरा."
       />
 
       <section className="details-grid">
         <article className="panel content-card reveal">
-          <p className="eyebrow">Address</p>
+          <p className="eyebrow">पत्ता</p>
           <h3>{storeInfo.addressLines[0]}</h3>
           <p>{storeInfo.addressLines[1]}</p>
           <a href={storeInfo.mapUrl} className="inline-link" target="_blank" rel="noreferrer">
-            Open in Google Maps
+            Google Maps उघडा
           </a>
         </article>
 
         <article className="panel content-card reveal">
-          <p className="eyebrow">Direct Contact</p>
-          <h3>Call the Store</h3>
-          <p>Tap below to directly connect with Bhakti Enterprises.</p>
+          <p className="eyebrow">थेट संपर्क</p>
+          <h3>दुकानाला कॉल करा</h3>
+          <p>खालील बटण दाबा आणि थेट बोला.</p>
           <a href={formatPhoneForHref(storeInfo.phone)} className="btn btn-solid">
-            Call Store
+            कॉल करा
           </a>
         </article>
 
         <article className="panel content-card wide reveal">
-          <p className="eyebrow">Operating Schedule</p>
-          <h3>Daily Timings</h3>
+          <p className="eyebrow">वेळापत्रक</p>
+          <h3>दररोजची वेळ</h3>
           <ul className="detail-list">
             {operatingSchedule.map((item) => (
               <li key={item}>{item}</li>

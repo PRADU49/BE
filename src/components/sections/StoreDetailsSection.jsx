@@ -6,25 +6,25 @@ function StoreDetailsSection() {
   return (
     <section className="details-section" id="details">
       <SectionTitle
-        eyebrow="Store Information"
-        title="Address, Hours, and Contact"
-        subtitle="All key details in one place for quick access."
+        eyebrow="दुकान माहिती"
+        title="पत्ता, वेळ, आणि संपर्क"
+        subtitle="सगळी माहिती एका ठिकाणी."
       />
 
       <div className="details-grid">
         <article className="panel reveal">
-          <p className="eyebrow">Address</p>
+          <p className="eyebrow">पत्ता</p>
           <h3>{storeInfo.addressLines[0]}</h3>
           <p>{storeInfo.addressLines[1]}</p>
           <a href={storeInfo.mapUrl} target="_blank" rel="noreferrer" className="inline-link">
-            Navigate on Google Maps
+            Google Maps वर जा
           </a>
         </article>
 
         <article className="panel reveal">
-          <p className="eyebrow">Operating Hours</p>
+          <p className="eyebrow">वेळ</p>
           <h3>{storeInfo.hours}</h3>
-          <p>Available every day for in-person purchase and support.</p>
+          <p>प्रत्यक्ष खरेदी आणि मदतीसाठी रोज उपलब्ध.</p>
           <div className="clock-badge" aria-hidden="true">
             <span className="clock-ring" />
             <span className="clock-hand hour" />
@@ -36,10 +36,10 @@ function StoreDetailsSection() {
         </article>
 
         <article className="panel wide reveal">
-          <p className="eyebrow">Quick Contact and Payments Info</p>
-          <h3>Fast Checkout. Easy Communication.</h3>
+          <p className="eyebrow">संपर्क आणि Payments</p>
+          <h3>जलद बिलिंग. सोपा संपर्क.</h3>
           <p>
-            Reach us directly for product checks and visit for flexible payment options.
+            Product checks आणि flexible payment options साठी थेट संपर्क करा.
           </p>
           <div className="chip-row">
             {serviceBadges.slice(0, 4).map((badge) => (
@@ -47,7 +47,7 @@ function StoreDetailsSection() {
             ))}
           </div>
           <a className="btn btn-ghost" href={formatPhoneForHref(storeInfo.phone)}>
-            Contact Store
+            स्टोअरला संपर्क करा
           </a>
         </article>
       </div>

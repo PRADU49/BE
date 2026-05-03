@@ -5,27 +5,26 @@ function AboutPage() {
   return (
     <main>
       <PageIntro
-        eyebrow="About The Store"
+        eyebrow="दुकानाबद्दल"
         title={`${storeInfo.name}, ${storeInfo.city}`}
-        description="Bhakti Enterprises is a local retail destination focused on practical mobile and home electronics buying experiences."
+        description="Bhakti Enterprises हे mobiles आणि home electronics साठी सोपं दुकान आहे."
       />
 
       <section className="split-grid">
         <article className="panel content-card reveal">
-          <p className="eyebrow">Store Profile</p>
-          <h3>Trusted Solapur Retail Presence</h3>
+          <p className="eyebrow">दुकान प्रोफाइल</p>
+          <h3>सोलापुरातलं चांगलं दुकान</h3>
           <p>
-            The store is positioned for everyday electronics purchases with in-person support,
-            practical product guidance, and straightforward communication.
+            रोजच्या खरेदीसाठी मदत मिळते. Product दाखवून समजावतात. बोलणं सोपं असतं.
           </p>
           <p>
-            Address: {storeInfo.addressLines[0]}, {storeInfo.addressLines[1]}.
+            पत्ता: {storeInfo.addressLines[0]}, {storeInfo.addressLines[1]}.
           </p>
         </article>
 
         <article className="panel content-card reveal">
-          <p className="eyebrow">What Stands Out</p>
-          <h3>Why Customers Prefer This Shop</h3>
+          <p className="eyebrow">काय वेगळं</p>
+          <h3>ग्राहक हे दुकान का निवडतात</h3>
           <ul className="detail-list">
             {whyBhakti.map((item) => (
               <li key={item}>{item}</li>

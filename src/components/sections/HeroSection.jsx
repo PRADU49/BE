@@ -6,28 +6,28 @@ function HeroSection() {
   return (
     <section className="hero-section reveal" id="home">
       <article className="hero-main panel">
-        <p className="eyebrow">Storefront</p>
+        <p className="eyebrow">स्टोअर फ्रंट</p>
         <h1>
-          Timeless Retail,
+          चांगली खरेदी,
           <span> Modern Electronics.</span>
         </h1>
         <img src={ornament} alt="" className="hero-ornament" aria-hidden="true" />
         <p>
-          {storeInfo.name} in Solapur offers multi-brand mobiles and home appliances with
-          practical guidance, transparent pricing, and dependable in-store support.
+          {storeInfo.name} मध्ये multi-brand mobiles आणि home appliances मिळतात. इथे मदत,
+          साफ किमती, आणि चांगली service मिळते.
         </p>
         <div className="hero-actions">
           <a href={formatPhoneForHref(storeInfo.phone)} className="btn btn-solid">
-            Call Now
+            आत्ताच कॉल करा
           </a>
           <a href={storeInfo.mapUrl} target="_blank" rel="noreferrer" className="btn btn-ghost">
-            Visit Location
+            लोकेशन बघा
           </a>
         </div>
       </article>
 
       <aside className="hero-aside panel sentiment-card">
-        <p className="eyebrow">Customer Sentiment</p>
+        <p className="eyebrow">ग्राहकांचा प्रतिसाद</p>
         <h3>
           <span>Google Rating</span> {storeInfo.googleRating}
         </h3>

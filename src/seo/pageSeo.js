@@ -145,14 +145,16 @@ const pageSeo = {
   },
   "/about": {
     path: "/about",
-    title: "About Bhakti Enterprises | Trusted Electronics Store in Solapur",
+    title: "About Bhakti Enterprises | Trusted Electronics Store in Solapur - Mobile Shop, Electronics Store",
     description:
-      "Learn about Bhakti Enterprises, a Solapur electronics and mobile store known for practical guidance, straightforward service, and local trust.",
+      "Learn about Bhakti Enterprises, a Solapur electronics and mobile store known for practical guidance, straightforward service, and local trust for everyday shoppers.",
     keywords: [
       "about Bhakti Enterprises",
       "Solapur electronics store",
       "trusted mobile store Solapur",
       "local electronics retailer Solapur",
+      "Solapur mobile shop",
+      "Solapur home electronics",
     ],
     robots: defaultRobots,
     googlebot: defaultBotRobots,
@@ -162,9 +164,9 @@ const pageSeo = {
       ...globalSchemas,
       buildPageSchema({
         path: "/about",
-        title: "About Bhakti Enterprises | Trusted Electronics Store in Solapur",
+        title: "About Bhakti Enterprises | Trusted Electronics Store in Solapur - Mobile Shop, Electronics Store",
         description:
-          "Learn about Bhakti Enterprises, a Solapur electronics and mobile store known for practical guidance, straightforward service, and local trust.",
+          "Learn about Bhakti Enterprises, a Solapur electronics and mobile store known for practical guidance, straightforward service, and local trust for everyday shoppers.",
         type: "AboutPage",
       }),
       buildBreadcrumbSchema("/about", [
@@ -175,14 +177,16 @@ const pageSeo = {
   },
   "/services": {
     path: "/services",
-    title: "Services | Mobile Sales, Accessories & Appliances in Solapur",
+    title: "Services | Mobile Sales, Accessories & Appliances in Solapur - Mobile Shop, Accessories",
     description:
-      "Explore Bhakti Enterprises services in Solapur, including smartphone sales, accessory support, home appliance retail, in-store guidance, and flexible payments.",
+      "Explore Bhakti Enterprises services in Solapur, including smartphone sales, accessory support, home appliance retail, in-store guidance, and flexible payments for local customers.",
     keywords: [
       "mobile sales Solapur",
       "mobile accessories Solapur",
       "home appliance shop Solapur",
       "Bhakti Enterprises services",
+      "Solapur smartphone sales",
+      "Solapur electronics services",
     ],
     robots: defaultRobots,
     googlebot: defaultBotRobots,
@@ -192,9 +196,9 @@ const pageSeo = {
       ...globalSchemas,
       buildPageSchema({
         path: "/services",
-        title: "Services | Mobile Sales, Accessories & Appliances in Solapur",
+        title: "Services | Mobile Sales, Accessories & Appliances in Solapur - Mobile Shop, Accessories",
         description:
-          "Explore Bhakti Enterprises services in Solapur, including smartphone sales, accessory support, home appliance retail, in-store guidance, and flexible payments.",
+          "Explore Bhakti Enterprises services in Solapur, including smartphone sales, accessory support, home appliance retail, in-store guidance, and flexible payments for local customers.",
         type: "CollectionPage",
         extra: {
           mainEntity: {
@@ -226,7 +230,7 @@ const pageSeo = {
   },
   "/contact": {
     path: "/contact",
-    title: "Contact Bhakti Enterprises | Store Address, Hours & Phone",
+    title: "Contact Bhakti Enterprises | Store Address, Hours & Phone - Solapur Mobile Shop",
     description:
       "Contact Bhakti Enterprises in Solapur for store directions, daily opening hours, and direct phone support for mobile and electronics purchases.",
     keywords: [
@@ -234,6 +238,8 @@ const pageSeo = {
       "electronics store address Solapur",
       "Bhakti Enterprises phone number",
       "mobile shop near Bhaji Market Solapur",
+      "Solapur contact details",
+      "Solapur electronics store phone",
     ],
     robots: defaultRobots,
     googlebot: defaultBotRobots,
@@ -243,7 +249,7 @@ const pageSeo = {
       ...globalSchemas,
       buildPageSchema({
         path: "/contact",
-        title: "Contact Bhakti Enterprises | Store Address, Hours & Phone",
+        title: "Contact Bhakti Enterprises | Store Address, Hours & Phone - Solapur Mobile Shop",
         description:
           "Contact Bhakti Enterprises in Solapur for store directions, daily opening hours, and direct phone support for mobile and electronics purchases.",
         type: "ContactPage",
@@ -256,7 +262,7 @@ const pageSeo = {
   },
   "/faq": {
     path: "/faq",
-    title: "FAQ | Bhakti Enterprises Solapur",
+    title: "FAQ | Bhakti Enterprises Solapur - Mobile Shop, Electronics Store",
     description:
       "Read frequently asked questions about Bhakti Enterprises, including products, payment options, store timing, and location details in Solapur.",
     keywords: [
@@ -264,6 +270,8 @@ const pageSeo = {
       "mobile shop questions Solapur",
       "electronics store FAQ",
       "Bhakti Enterprises timings",
+      "Solapur store questions",
+      "Solapur mobile store FAQ",
     ],
     robots: defaultRobots,
     googlebot: defaultBotRobots,
@@ -273,7 +281,7 @@ const pageSeo = {
       ...globalSchemas,
       buildPageSchema({
         path: "/faq",
-        title: "FAQ | Bhakti Enterprises Solapur",
+        title: "FAQ | Bhakti Enterprises Solapur - Mobile Shop, Electronics Store",
         description:
           "Read frequently asked questions about Bhakti Enterprises, including products, payment options, store timing, and location details in Solapur.",
         type: "FAQPage",
@@ -299,7 +307,7 @@ const pageSeo = {
     title: "Page Not Found | Bhakti Enterprises",
     description:
       "The requested page could not be found on the Bhakti Enterprises website.",
-    keywords: ["Bhakti Enterprises 404"],
+    keywords: ["Bhakti Enterprises 404", "Solapur mobile store"],
     robots: "noindex, nofollow, noarchive",
     googlebot: "noindex, nofollow, noarchive",
     bingbot: "noindex, nofollow, noarchive",

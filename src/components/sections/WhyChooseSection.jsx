@@ -5,9 +5,9 @@ function WhyChooseSection() {
   return (
     <section className="why-section">
       <SectionTitle
-        eyebrow="Why Customers Choose Us"
-        title="Built on Value and Trust"
-        subtitle="Consistent quality with practical retail support."
+        eyebrow="ग्राहक आम्हाला का निवडतात"
+        title="विश्वास आणि योग्य मूल्य"
+        subtitle="नियमित गुणवत्ता आणि सोपी मदत."
       />
 
       <div className="highlight-grid">

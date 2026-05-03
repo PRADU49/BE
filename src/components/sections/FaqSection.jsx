@@ -6,8 +6,8 @@ function FaqSection({ showHeading = true }) {
     <section className="faq-section">
       {showHeading ? (
         <SectionTitle
-          eyebrow="Frequently Asked Questions"
-          title="Everything Customers Ask Often"
+          eyebrow="FAQ"
+          title="ग्राहक जास्त विचारतात ते प्रश्न"
         />
       ) : null}
 

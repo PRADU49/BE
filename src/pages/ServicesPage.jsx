@@ -12,9 +12,9 @@ function ServicesPage() {
   return (
     <main>
       <PageIntro
-        eyebrow="Services"
-        title="Sales and Customer Services"
-        description="From mobile shopping to home appliance selection, services are structured for clarity, value, and quick decision-making."
+        eyebrow="सेवा"
+        title="विक्री आणि ग्राहक सेवा"
+        description="Mobile shopping पासून home appliance निवडीपर्यंत सगळं सोपं आहे."
       />
 
       <section className="products-grid">
@@ -27,8 +27,8 @@ function ServicesPage() {
       </section>
 
       <section className="panel content-card reveal">
-        <p className="eyebrow">Featured Collections</p>
-        <h3>Popular In-Store Choices</h3>
+        <p className="eyebrow">लोकप्रिय पर्याय</p>
+        <h3>लोकांना आवडणाऱ्या निवडी</h3>
         <ul className="detail-list">
           {featuredCollections.map((item) => (
             <li key={item}>{item}</li>
@@ -38,25 +38,25 @@ function ServicesPage() {
 
       <section className="split-grid">
         <article className="panel content-card reveal">
-          <p className="eyebrow">How Service Works</p>
-          <h3>In-Store Experience Flow</h3>
+          <p className="eyebrow">सेवा कशी चालते</p>
+          <h3>दुकानात कसं काम होतं</h3>
           <ol className="detail-list ordered">
-            <li>Share budget and use-case with the counter team.</li>
-            <li>Compare practical options across brands.</li>
-            <li>Finalize product with transparent billing options.</li>
-            <li>Get post-purchase support and quick clarifications.</li>
+            <li>बजेट आणि गरज सांगा.</li>
+            <li>ब्रँड्स एकमेकांना बघा.</li>
+            <li>बिलिंग करून खरेदी पूर्ण करा.</li>
+            <li>नंतर मदत हवी असेल तर विचारा.</li>
           </ol>
         </article>
 
         <article className="panel content-card reveal">
-          <p className="eyebrow">Payment and Convenience</p>
-          <h3>Checkout Modes</h3>
+          <p className="eyebrow">पेमेंट व सोय</p>
+          <h3>Payment कशी करता येईल</h3>
           <div className="chip-row">
             {serviceBadges.map((badge) => (
               <span key={badge}>{badge}</span>
             ))}
           </div>
-          <p>Store hours: {storeInfo.hours}</p>
+          <p>दुकानाची वेळ: {storeInfo.hours}</p>
         </article>
       </section>
     </main>

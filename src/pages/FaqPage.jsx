@@ -6,8 +6,8 @@ function FaqPage() {
     <main>
       <PageIntro
         eyebrow="FAQ"
-        title="Customer Questions"
-        description="Quick answers about products, services, payments, and store identity."
+        title="ग्राहकांचे प्रश्न"
+        description="Products, services, payments, आणि store identity बद्दल सोपी उत्तरे."
       />
       <FaqSection showHeading={false} />
     </main>

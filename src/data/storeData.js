@@ -1,14 +1,14 @@
 export const storeInfo = {
   name: "Bhakti Enterprises",
-  tagline: "Multi-brand mobiles and electronic home appliances in Solapur",
-  city: "Solapur, Maharashtra",
+  tagline: "सोलापुरातले multi-brand mobiles आणि home appliances दुकान",
+  city: "सोलापूर, महाराष्ट्र",
   region: "Maharashtra",
   postalCode: "413001",
   countryCode: "IN",
   phone: "+91 90219 29391",
   googleRating: "5.0",
-  reviewQuote: "Best experience best price",
-  hours: "Open daily, 10:00 AM to 10:00 PM",
+  reviewQuote: "चांगली service, चांगली price",
+  hours: "रोज 10:00 AM ते 10:00 PM",
   latitude: 17.6599,
   longitude: 75.9064,
   addressLines: [
@@ -31,128 +31,107 @@ export const serviceBadges = [
 ];
 
 export const operatingSchedule = [
-  "Monday: 10:00 AM - 10:00 PM",
-  "Tuesday: 10:00 AM - 10:00 PM",
-  "Wednesday: 10:00 AM - 10:00 PM",
-  "Thursday: 10:00 AM - 10:00 PM",
-  "Friday: 10:00 AM - 10:00 PM",
-  "Saturday: 10:00 AM - 10:00 PM",
-  "Sunday: 10:00 AM - 10:00 PM",
+  "सोमवार ते रविवार: 10:00 AM - 10:00 PM",
 ];
 
 export const services = [
   {
-    title: "Multi-Brand Mobile Sales",
-    description:
-      "Guidance-driven smartphone selection across popular price ranges and use-cases.",
+    title: "मल्टी-ब्रँड Mobile Sales",
+    description: "Budget आणि premium smartphone मधून सोपा पर्याय निवडा.",
   },
   {
     title: "Accessory Counter",
-    description:
-      "Chargers, earphones, protective covers, screen guards, cables, and day-to-day accessories.",
+    description: "Chargers, earphones, covers, screen guards, आणि cables मिळतात.",
   },
   {
     title: "Home Appliance Retail",
-    description:
-      "Useful household electronics with practical recommendations for family requirements.",
+    description: "घरच्या गरजांसाठी useful home electronics मिळतात.",
   },
   {
     title: "In-Store Product Guidance",
-    description:
-      "Simple comparisons, value-for-money recommendations, and post-purchase help at the counter.",
+    description: "दुकानात सोपी तुलना आणि खरेदीनंतरची मदत मिळते.",
   },
   {
     title: "Digital Billing and Payments",
-    description:
-      "Easy checkout with UPI, debit cards, and cash for smooth in-store transactions.",
+    description: "UPI, debit cards, आणि cash ने सोपे billing होते.",
   },
   {
     title: "Customer-First Support",
-    description:
-      "Friendly communication and repeat-customer focused service at every visit.",
+    description: "मित्रासारखी बोलणी आणि चांगली मदत.",
   },
 ];
 
 export const productGroups = [
   {
     title: "Smartphones",
-    description:
-      "Multiple mobile brands with practical recommendations based on usage and budget.",
+    description: "Usage आणि budget नुसार अनेक mobile brands मिळतात.",
   },
   {
     title: "Accessories",
-    description:
-      "Chargers, earphones, power banks, covers, and everyday add-ons selected for quality.",
+    description: "Chargers, earphones, power banks, covers, आणि add-ons मिळतात.",
   },
   {
     title: "Home Appliances",
-    description:
-      "Useful electronic home products designed for comfort, convenience, and value.",
+    description: "घरच्या सोयीसाठी home electronics मिळतात.",
   },
   {
     title: "Store Support",
-    description:
-      "Clear buying guidance and friendly after-sales assistance from experienced staff.",
+    description: "दुकानात मदत मिळते. नंतरही मदत मिळते.",
   },
   {
     title: "Digital Payments",
-    description:
-      "Smooth billing and fast payment support with UPI, debit cards, and cash options.",
+    description: "Billing सोपं होतं आणि payment पटकन होतं.",
   },
   {
     title: "Value Pricing",
-    description:
-      "Competitive prices and dependable options that balance performance with affordability.",
+    description: "चांगल्या किमतीत dependable options मिळतात.",
   },
 ];
 
 export const highlights = [
   {
     heading: "Payment Flexibility",
-    body: "Pay your way: UPI, debit card, or cash with quick in-store billing.",
+    body: "UPI, debit card, किंवा cash चालते.",
   },
   {
     heading: "Everyday Availability",
-    body: "Open daily from morning to night so shopping fits your schedule.",
+    body: "रोज सकाळपासून रात्रीपर्यंत दुकान उघडं असतं.",
   },
   {
     heading: "Strong Local Trust",
-    body: "Built on repeat customers, transparent pricing, and practical service.",
+    body: "लोक परत परत येतात. किमती साफ असतात. सेवा सोपी असते.",
   },
 ];
 
 export const whyBhakti = [
-  "Central and easy-to-find Solapur location",
-  "Balanced mix of mobile and home electronics under one roof",
-  "Daily operating hours for convenience",
-  "Straightforward local-store service style",
-  "Strong customer sentiment from listed feedback",
+  "सोलापुरात सहज मिळणारं ठिकाण",
+  "Mobile आणि home electronics एकाच जागी",
+  "रोजची वेळ सोयीची",
+  "साधी आणि चांगली सेवा",
+  "लोकांचा चांगला प्रतिसाद",
 ];
 
 export const similarNameWarning = [
-  "Bhakti Enterprises entries in other areas may refer to different businesses and categories.",
-  "A similarly named business in Modi Khana is associated with photocopying-related services.",
-  "Bhakti Mobile Gallery in Tembhurni is a separate listing and not this Solapur store.",
+  "इतर ठिकाणची समान नावाची दुकाने वेगळी असू शकतात.",
+  "Modi Khana मधलं समान नावाचं दुकान photocopying साठी आहे.",
+  "Tembhurni मधली Bhakti Mobile Gallery वेगळी आहे.",
 ];
 
 export const faqs = [
   {
-    question: "What does Bhakti Enterprises sell?",
-    answer:
-      "The store offers multi-brand mobiles, accessories, and electronic home appliances.",
+    question: "Bhakti Enterprises काय विकते?",
+    answer: "Store मध्ये multi-brand mobiles, accessories, आणि home appliances मिळतात.",
   },
   {
-    question: "Which payment methods are available?",
-    answer:
-      "Cash, debit cards, and UPI digital payments are available at the counter.",
+    question: "कोणते payment methods उपलब्ध आहेत?",
+    answer: "Cash, debit cards, आणि UPI चालतं.",
   },
   {
-    question: "Is this the same as other similarly named businesses?",
-    answer:
-      "No. This Bhakti Enterprises is the Solapur retail store focused on mobiles and home electronics.",
+    question: "हे इतर समान नावाच्या व्यवसायासारखेच आहे का?",
+    answer: "नाही. हे Solapur मधलं मूळ retail store आहे. इथे mobiles आणि home electronics मिळतात.",
   },
   {
-    question: "When is the shop open?",
-    answer: "The store is open every day from 10:00 AM to 10:00 PM.",
+    question: "दुकान कधी उघडे असते?",
+    answer: "दुकान रोज 10:00 AM ते 10:00 PM उघडं असतं.",
   },
 ];
