@@ -4,10 +4,33 @@ import SiteFooter from "./components/layout/SiteFooter";
 import SiteHeader from "./components/layout/SiteHeader";
 import { usePointerGlow } from "./hooks/usePointerGlow";
 import { BrowserRouter } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { useEffect } from "react";
+import { webVitalsMonitoring } from "./utils/performanceOptimization";
 
 function App() {
   usePointerGlow();
+
+  // Monitor Web Vitals
+  useEffect(() => {
+    // Log web vitals in development
+    if (process.env.NODE_ENV === "development") {
+      // Measure LCP
+      webVitalsMonitoring.measureLCP((lcp) => {
+        console.log(`LCP: ${lcp.toFixed(2)}ms`);
+      });
+
+      // Measure CLS
+      webVitalsMonitoring.measureCLS((cls) => {
+        console.log(`CLS: ${cls.toFixed(3)}`);
+      });
+
+      // Measure TTFB
+      webVitalsMonitoring.measureTTFB((ttfb) => {
+        console.log(`TTFB: ${ttfb.toFixed(2)}ms`);
+      });
+    }
+  }, []);
 
   return (
     <BrowserRouter>

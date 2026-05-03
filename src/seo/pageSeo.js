@@ -45,6 +45,74 @@ function buildPageSchema({ path, title, description, type = "WebPage", extra = {
   };
 }
 
+// Product Schema Builder for e-commerce products
+function buildProductSchema({ id, name, description, image, price, availability = "InStock", ratingValue = 4.5, reviewCount = 100 }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${siteConfig.siteUrl}/product/${id}#product`,
+    sku: id,
+    name,
+    description,
+    image: fullUrl(image),
+    offers: {
+      "@type": "Offer",
+      url: `${siteConfig.siteUrl}/product/${id}`,
+      priceCurrency: "INR",
+      price,
+      availability: `https://schema.org/${availability}`,
+      seller: {
+        "@id": `${siteConfig.siteUrl}/#store`,
+      },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue,
+      reviewCount,
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+}
+
+// Review Schema Builder
+function buildReviewSchema({ productId, reviewerName, reviewDate, reviewText, ratingValue = 5 }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "@id": `${siteConfig.siteUrl}/review/${productId}/${Date.now()}`,
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue,
+      bestRating: "5",
+      worstRating: "1",
+    },
+    author: {
+      "@type": "Person",
+      name: reviewerName,
+    },
+    reviewBody: reviewText,
+    datePublished: reviewDate,
+    itemReviewed: {
+      "@type": "Product",
+      "@id": `${siteConfig.siteUrl}/product/${productId}#product`,
+    },
+  };
+}
+
+// Video Schema Builder
+function buildVideoSchema({ name, description, thumbnail, uploadDate, duration }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name,
+    description,
+    thumbnailUrl: fullUrl(thumbnail),
+    uploadDate,
+    duration,
+  };
+}
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -71,6 +139,15 @@ const organizationSchema = {
       availableLanguage: ["en", "hi", "mr"],
     },
   ],
+  sameAs: siteConfig.socialProfiles,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: siteConfig.searchUrl,
+    },
+    query_input: "required name=search_term_string",
+  },
 };
 
 const websiteSchema = {
@@ -118,7 +195,10 @@ const localBusinessSchema = {
     "@type": "AggregateRating",
     ratingValue: storeInfo.googleRating,
     reviewCount: "1",
+    bestRating: "5",
+    worstRating: "1",
   },
+  sameAs: siteConfig.socialProfiles,
 };
 
 const globalSchemas = [organizationSchema, websiteSchema, localBusinessSchema];
@@ -342,3 +422,12 @@ export function getPageSeo(pathname) {
     hreflang: siteConfig.hreflang,
   };
 }
+
+// Export schema builders for use in other components
+export {
+  buildBreadcrumbSchema,
+  buildPageSchema,
+  buildProductSchema,
+  buildReviewSchema,
+  buildVideoSchema,
+};

@@ -171,6 +171,73 @@ function SeoManager() {
         selector: 'meta[name="twitter:image:alt"]',
         attributes: { name: "twitter:image:alt", content: seo.imageAlt },
       },
+      // Image Optimization Meta Tags
+      {
+        selector: 'meta[name="image_src"]',
+        attributes: { name: "image_src", content: seo.image },
+      },
+      {
+        selector: 'meta[property="og:image:type"]',
+        attributes: { property: "og:image:type", content: "image/svg+xml" },
+      },
+      // Accessibility Meta Tags
+      {
+        selector: 'meta[name="accessibility"]',
+        attributes: { name: "accessibility", content: "yes" },
+      },
+      {
+        selector: 'meta[name="color-scheme"]',
+        attributes: { name: "color-scheme", content: "light dark" },
+      },
+      // Mobile Web App Meta Tags
+      {
+        selector: 'meta[name="viewport"]',
+        attributes: {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes",
+        },
+      },
+      // Browser Support & Compatibility
+      {
+        selector: 'meta[http-equiv="X-UA-Compatible"]',
+        attributes: { "http-equiv": "X-UA-Compatible", content: "IE=edge" },
+      },
+      // Security & Privacy
+      {
+        selector: 'meta[http-equiv="Content-Security-Policy"]',
+        attributes: {
+          "http-equiv": "Content-Security-Policy",
+          content: "upgrade-insecure-requests",
+        },
+      },
+      // Permissions & Requests
+      {
+        selector: 'meta[name="permissions-policy"]',
+        attributes: {
+          name: "permissions-policy",
+          content: "geolocation=(), microphone=(), camera=()",
+        },
+      },
+      // Performance & Preloading
+      {
+        selector: 'meta[http-equiv="x-ua-compatible"]',
+        attributes: { "http-equiv": "x-ua-compatible", content: "ie=edge" },
+      },
+      // Content Language
+      {
+        selector: 'meta[name="content-language"]',
+        attributes: { name: "content-language", content: "en-IN" },
+      },
+      // Copyright & Legal
+      {
+        selector: 'meta[name="copyright"]',
+        attributes: { name: "copyright", content: `© 2024 ${siteConfig.author}. All rights reserved.` },
+      },
+      // Open Graph Extensions
+      {
+        selector: 'meta[property="og:see_also"]',
+        attributes: { property: "og:see_also", content: `${siteConfig.siteUrl}/sitemap.xml` },
+      },
     ].forEach(({ selector, attributes }) => upsertMeta(selector, attributes));
 
     document.head.querySelectorAll('script[data-seo-schema="true"]').forEach((node) => {

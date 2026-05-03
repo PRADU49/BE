@@ -23,12 +23,25 @@ export const siteConfig = {
     "Solapur electronics store",
   ],
   author: storeInfo.name,
-  creator: "Pradyumna Pawar",
+  creator: "Pradhumn Pawar",
   publisher: storeInfo.name,
   ogImagePath: "/og-image.svg",
   ogImageAlt: "Bhakti Enterprises mobile and electronics store in Solapur",
   geoRegion: "IN-MH",
   geoPlacename: "Solapur",
+  // SEO & Schema Configuration
+  enableProductSchema: true,
+  enableReviewSchema: true,
+  enableVideoSchema: true,
+  enableImageOptimization: true,
+  enableAccessibility: true,
+  // Brand Configuration for Rich Snippets
+  socialProfiles: [
+    "https://www.facebook.com/bhaktienterprises",
+    "https://www.instagram.com/bhaktienterprises",
+    "https://www.youtube.com/bhaktienterprises",
+  ],
+  searchUrl: "https://bhakti-enterprises-gilt.vercel.app/search?q={search_term_string}",
 };
 
 export function fullUrl(path = "/") {
