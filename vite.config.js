@@ -2,16 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [
-    react({
-      babel: {
-        plugins: [
-          // Enable Fast Refresh optimization
-          "@babel/plugin-syntax-import-meta",
-        ],
-      },
-    }),
-  ],
+  plugins: [react()],
   build: {
     // Optimize bundle size
     minify: "terser",
