@@ -2,14 +2,19 @@ import ScrollProgressBar from "./components/effects/ScrollProgressBar";
 import AppRoutes from "./components/layout/AppRoutes";
 import SiteFooter from "./components/layout/SiteFooter";
 import SiteHeader from "./components/layout/SiteHeader";
+import MaintenancePage from "./pages/MaintenancePage";
 import { usePointerGlow } from "./hooks/usePointerGlow";
 import { BrowserRouter } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from "react";
 import { webVitalsMonitoring } from "./utils/performanceOptimization";
+import { isMaintenanceMode } from "./config/maintenanceConfig";
 
 function App() {
   usePointerGlow();
+
+  // Check if in maintenance mode
+  const inMaintenance = isMaintenanceMode();
 
   // Monitor Web Vitals
   useEffect(() => {
@@ -31,6 +36,11 @@ function App() {
       });
     }
   }, []);
+
+  // Show maintenance page if enabled
+  if (inMaintenance) {
+    return <MaintenancePage />;
+  }
 
   return (
     <BrowserRouter>

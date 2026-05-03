@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./styles/index.css";
-import { performanceMonitoring } from "./utils/performanceOptimization";
+import { memoryOptimization, performanceMonitoring } from "./utils/performanceOptimization";
 
 // Initialize performance monitoring
 if (process.env.NODE_ENV === "development") {
-  performanceMonitoring.logMemoryUsage();
+  memoryOptimization.logMemoryUsage();
   console.log("Performance monitoring enabled");
 }
 
